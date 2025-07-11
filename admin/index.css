@@ -1,0 +1,54 @@
+nav{
+    width: 18%;
+    height: 100vh;
+    background-color: goldenrod ;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+nav h2 {
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+nav h5{
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.hovers{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    z-index: 1;
+}
+.hovers li{
+    padding: 10px;
+    margin: 8px;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 2;
+    cursor:pointer
+}  
+
+.hovers li a{
+    text-decoration: none;
+    color: white;
+}
+.hovers li:hover {
+    background-color: #fff8dc; /* lighter gold/cream for contrast */
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    box-shadow: 1 2px 8px rgba(0,0,0,0.08);
+    transform: scale(1.05);
+    text-align: center;
+    transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
+.hovers li:hover a {
+    color: goldenrod;
+}
