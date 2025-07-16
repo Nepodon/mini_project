@@ -18,9 +18,10 @@ CREATE TABLE users (
 CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
+    category VARCHAR(255) NOT NULL,
     description TEXT,
     price DECIMAL(10,2) NOT NULL,
-    image VARCHAR(255),
+    image_url VARCHAR(255),
     stock INT DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -56,4 +57,3 @@ CREATE TABLE cart (
     FOREIGN KEY (product_id) REFERENCES products(id),
     UNIQUE (user_id, product_id)
 );
-`

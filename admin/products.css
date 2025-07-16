@@ -1,0 +1,32 @@
+*{
+    font-family: 'Merriweather', serif;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    height: auto;
+    background-color: lightblue;
+    margin-top: -20px;
+    margin-left: 18px; 
+    border: 2px solid black;
+}
+.product-details h1{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.product-card img{
+    width: 100%;
+    height: 30vh;
+    padding:5px;
+}
+.product-details {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.product-details p{
+    margin-left: 5px;
+
+}
