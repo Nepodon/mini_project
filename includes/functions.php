@@ -4,7 +4,6 @@ require_once("db.php");
 
 function validate_user(string $email, string $password): int{
     global $conn;
-
     
     $sql = "SELECT id, email, password FROM users WHERE email = '$email'";
     $result = $conn->query($sql);
