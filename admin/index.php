@@ -22,15 +22,24 @@
             </ul>    
         </nav>
         <main>
-            <h1 id="products" style="margin-left:60px;margin-top:10px;">Products</h1>
-            <br>
-            <br>
-            <div class="product-card">
-                <?php 
-                require "products.php";
-                ?>
-            </div>
-            <hr>
+            <section class="products">
+                <h1 id="products" style="margin-left:60px;margin-top:10px;">Products</h1>
+                <br>
+                <br>
+                <div class="product-card">
+                    <ul>
+                        <li>ID</li>
+                        <li>Name</li>
+                        <li>Category</li>
+                        <li>Price</li>
+                        <li>Stock</li>
+                    </ul>
+                    <?php
+                    require "products.php";
+                    ?>
+                </div>
+            </section>
+            
         </main>
 
     </body>

@@ -16,12 +16,14 @@ if($result->num_rows > 0){
         $product_image = $row['image_url'];
         $product_stock = $row['stock'];
 
-        getImage($product_image);
         echo "<div class='product-details'>";
-        echo "<h1>".$product_name."</h1>";
-        echo "<p>Price: <span style='font-family:Arial;'>&#8377;</span>"
-        . number_format($product_price, 2, '.', ',')."</p>";
-        echo "<p>Stock: ".$product_stock."</p>";
+        echo "<p>".$product_id."</p>";
+        echo "<p>".$product_name."</p>";
+        echo "<p>".$product_category."</p>";
+        echo "<p><span style='font-family:Arial;'>&#8377;</span>" . 
+        number_format($product_price, 2, '.', ',')."</p>";
+        
+        echo "<p>".$product_stock."</p>";
         echo "</div>";
     }
 }
