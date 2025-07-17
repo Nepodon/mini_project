@@ -16,6 +16,7 @@ Params:
 
 
 function getImage($image_url): void{
+    $image_url = "../images/".$image_url;
     if(file_exists($image_url)){
         echo "<img src='../images/" . $image_url . "' alt='$image_url'>";
     }else{

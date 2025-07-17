@@ -4,12 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="products.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: hsl(0, 0%, 5%);
+                font-family: 'Merriweather', serif;
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -21,26 +26,26 @@
                 <li><a href="#">Users</a></li>  
             </ul>    
         </nav>
-        <main>
-            <section class="products">
-                <h1 id="products" style="margin-left:60px;margin-top:10px;">Products</h1>
-                <br>
-                <br>
-                <div class="product-card">
-                    <ul>
-                        <li>ID</li>
-                        <li>Name</li>
-                        <li>Category</li>
-                        <li>Price</li>
-                        <li>Stock</li>
-                    </ul>
-                    <?php
-                    require "products.php";
-                    ?>
-                </div>
-            </section>
-            
-        </main>
-
+        <h1 id="products" 
+            style="color: hsl(0,0%,95%);margin-left: 40px;margin-top: 40px;font-size: 2rem;">
+            Products</h1>
+        <div class="products-container">
+            <table align="center" class="products">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Options</th>
+            </tr>
+            <?php
+            require_once 'products.php';
+            showProducts();
+            ?>
+            </table>
+        </div>
+        
     </body>
 </html>

@@ -2,27 +2,18 @@ nav{
     width: 100%;
     height: 10%;
     display: flex;
-    background-color: goldenrod ;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
+    background-color: hsl(0, 0%, 10%);
 }
-
 nav h2 {
     font-size: 1.5rem;
-    color: white;
+    color: hsl(0,0%,95%);
     padding: 10px;
     margin: 0;
     position: fixed;
 }
-nav h5{
-    font-size: 1.2rem;
-    color: white;
-    padding: 10px;
-    margin: 0;
-
-}
-
 .hovers{
     list-style: none;
     padding: 10px;
@@ -34,24 +25,63 @@ nav h5{
     margin: 8px;
     display: block;
     float: left;
-    transition: all 0.3s ease;
-    cursor:pointer
+    transition: all 0.2s ease-in-out;
+    cursor:pointer;
 }  
 
 .hovers li a{
     text-decoration: none;
-    color: white;
+    color: hsl(0,0%,70%);
 }
 .hovers li:hover {
-    background-color: #fff8dc; /* lighter gold/cream for contrast */
-    color: goldenrod;
-    border: 1px solid goldenrod;
-    box-shadow: 0 0 10px 0 beige;
+    background-color: hsl(0,0%,10%); 
+    border: 1px solid hsl(0,0%,10%);
+    border-radius: 26px;
+    box-shadow: 0 0 10px 0 hsl(0,0%,70%);
     z-index: -1;
 }
 .hovers li:hover a {
-    color: goldenrod;
+    color: hsl(0,0%,95%);
 }
-main {
-    height: 100vh;
+.products-container{
+    width: 55%;
+    height: 50vh;
+    margin-left: 40px;
+    justify-content: center;
+    background-color: hsl(0,0%,10%);
+    border-radius: 26px;
+    
+}
+.products{
+    
+    padding: 20px;  
+    margin-top: 40px;
+    width: 950px;
+    display: block;
+    justify-content: center;
+}
+.products th{
+    border: 1px solid hsl(0,0%,80%);
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(0,0%,70%);
+}
+.products td{
+    border: 1px solid hsl(0,0%,80%);
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(0,0%,70%);
+}
+
+.products td button{
+    border: none;
+    width: 100px;
+    margin-top: -5px;
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 61%, 40%);
+    float: right;
+    cursor: pointer;
+    padding: 5px;
 }
