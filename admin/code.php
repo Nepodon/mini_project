@@ -29,14 +29,40 @@ function showProducts(){
             echo "<td>".$product_name . "</td>";
             echo "<td>".$product_category . "</td>";
             echo "<td>".$product_description . "</td>";
-            echo "<td>".$product_price . "</td>";
+            $product_price = number_format($product_price, 2);
+            echo "<td><span>&#8377</span>".$product_price . "</td>";
             echo "<td>".$product_stock . "</td>";
             echo "<td><button id='delete' onclick='deleteProduct(".$product_id.")'>delete</button></td>";
             echo "</tr>";
         }
     }
 }
-if(isset($_GET['delete'])){
-    $product_id = $_GET['delete'];
-    echo "deleted";
-} 
+function showRevenue(){
+    global $conn;
+    $sql = "SELECT sum(total_amount) as total_revenue FROM orders";
+    $result = $conn->query($sql);
+    if($result){
+        while($row = $result->fetch_assoc()){
+
+            $revenue = $row['total_revenue'];
+            $revenue = number_format($revenue, 2);
+            echo "<div class='revenue-details'>";
+            echo "<span><p>Total Revenue: &#8377 ".$revenue."</p></span>";
+            echo "</div>";
+        }
+    }
+}
+function showOrders(): void{
+    global $conn;
+    $sql = "SELECT count(*) as total_orders FROM orders";
+    $result = $conn->query($sql);
+    if($result){
+        while($row = $result->fetch_assoc()){
+            $total_orders = $row['total_orders'];
+            echo "<div class='orders-details'>";
+            echo "<span><p>All-time Orders: ".$total_orders."</p></span>";
+            echo "<span><p>Today's Orders: ".$total_orders."</p></span>";
+            echo "</div>";
+        }
+    }
+}   

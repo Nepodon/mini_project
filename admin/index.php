@@ -1,3 +1,6 @@
+<?php
+require_once 'code.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
         <style>
             body{
-                background-color: hsl(0, 0%, 5%);
+                background-color: hsl(0, 0%, 0%);
                 font-family: 'Merriweather', serif;
             }
         </style>
@@ -41,11 +44,24 @@
                 <th>Options</th>
             </tr>
             <?php
-            require_once 'products.php';
             showProducts();
             ?>
             </table>
         </div>
-        
+        <div class="display-container-revenue">
+            <h1>Revenue</h1>
+            <?php
+            showRevenue();
+            ?>
+        </div> 
+        <div class="display-container-orders">
+            <h1>Orders</h1>
+            <?php
+            showOrders();
+            ?>
+        </div>
+        <div class="display-container-orders">
+            
+        </div>
     </body>
 </html>
