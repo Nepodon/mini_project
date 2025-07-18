@@ -40,35 +40,18 @@ HC-05 Bluetooth Module (Arduino, STM32)
 
 ESP8266 Wi-Fi Module (if not using NodeMCU)
 
-NRF24L01+ 2.4GHz Wireless Module
-
 433MHz RF Transmitter/Receiver Module
-
-LoRa SX1278 Module
 
 GPS Module (NEO-6M)
 
 -> Sensor Modules
-DHT11 / DHT22 (Temperature & Humidity)
-
-BMP180 / BMP280 (Barometric Pressure)
-
-MQ-2, MQ-135 (Gas Sensors)
-
-HC-SR04 (Ultrasonic Distance Sensor)
 
 IR Sensor Module
-
-Flame Sensor
 
 Soil Moisture Sensor
 
 -> Display Modules
 16x2 LCD with I2C Adapter
-
-0.96" OLED Display (I2C, SSD1306)
-
-1.8" TFT Display
 
 LED Dot Matrix 8x8
 
@@ -77,29 +60,12 @@ Nextion Touch Display
 -> Input & Control Modules
 Joystick Module
 
-Rotary Encoder
-
-Keypad 4x4
-
-Relay Module (1/2/4 channel)
 
 IR Remote and Receiver Kit
-
--> Power & Charging Modules
-MB102 Breadboard Power Supply
-
-TP4056 Lithium Battery Charger Module
-
-Boost Converter 3.7V to 5V
-
-Solar Charging Module
 
 -> Camera & Audio Modules
 OV7670 Camera Module (Arduino/STM)
 
-ESP32-CAM
 
-Microphone Sound Sensor Module
 
-DFPlayer Mini MP3 Player
 
