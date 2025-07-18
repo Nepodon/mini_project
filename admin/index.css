@@ -85,7 +85,7 @@ nav h2 {
     padding: 5px;
 }
 
-.display-container-revenue{
+.display-revenue{
     width: 30%;
     height: 20vh;
     background-color: hsl(0,0%,5%);
@@ -95,13 +95,13 @@ nav h2 {
     margin-top: -23%;
     border-radius: 16px;
 }
-.display-container-revenue h1 {
+.display-revenue h1 {
     color: hsl(0,0%,95%);
     margin-left: 40px;
     margin-top: 20px;
 }
 
-.display-container-revenue .revenue-details{
+.display-revenue .revenue-details{
     display: flex;
     justify-content: center;
     align-items: end;
@@ -116,7 +116,7 @@ nav h2 {
     color: hsl(0,0%,70%);
 }
 
-.display-container-orders{
+.display-orders{
     width: 30%;
     height: 27vh;
     background-color: hsl(0,0%,5%);
@@ -126,12 +126,12 @@ nav h2 {
     margin-top: -12%;
     border-radius: 16px;
 }
-.display-container-orders h1 {
+.display-orders h1 {
     color: hsl(0,0%,95%);
     margin-left: 40px;
     margin-top: 20px;
 }
-.display-container-orders .orders-details{
+.display-orders .orders-details{
     font-size: 1.1rem;
     color: hsl(0,0%,70%);
     display: block;
@@ -139,4 +139,21 @@ nav h2 {
     align-content: center;
     margin-left: -125px;
     margin-top: 40px;
+}
+.display-order-details{
+    width: 60%;
+    height: 50vh;
+
+    background-color: hsl(0,0%,5%);
+    display: block;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    margin-top: 50px;
+}
+.display-order-details h1{
+    color: hsl(0,0%,95%);
+    margin-left: 40px;
+    margin-top: 20px;
 }

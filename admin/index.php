@@ -48,20 +48,23 @@ require_once 'code.php';
             ?>
             </table>
         </div>
-        <div class="display-container-revenue">
+            <div class="display-revenue">
             <h1>Revenue</h1>
             <?php
             showRevenue();
             ?>
         </div> 
-        <div class="display-container-orders">
+        <div class="display-orders">
+            <h1>Orders</h1>
+            <?php
+            showOrdersCount();
+            ?>
+        </div>
+        <div class="display-order-details">
             <h1>Orders</h1>
             <?php
             showOrders();
             ?>
-        </div>
-        <div class="display-container-orders">
-            
         </div>
     </body>
 </html>

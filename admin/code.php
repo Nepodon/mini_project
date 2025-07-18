@@ -52,7 +52,7 @@ function showRevenue(){
         }
     }
 }
-function showOrders(): void{
+function showOrdersCount(): void{
     global $conn;
     $sql = "SELECT count(*) as total_orders FROM orders";
     $result = $conn->query($sql);
@@ -66,3 +66,5 @@ function showOrders(): void{
         }
     }
 }   
+function showOrders(): void{
+}
